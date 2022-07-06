@@ -388,10 +388,9 @@ let g:airline#extensions#tmuxline#enabled=1
 let g:tmuxline_powerline_separators=1
 
 
-"let g:python3_host_prog = '/home/linuxbrew/.linuxbrew/bin/python3'
 let g:python3_host_skip_check = 1
 let g:deoplete#enable_at_startup = 1
-"hi cursorline cterm=bold
+
 hi matchparen ctermbg=darkgrey ctermfg=darkblue
 
 inoremap <C-Q>     <esc>:q<cr>
