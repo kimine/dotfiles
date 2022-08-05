@@ -1,4 +1,4 @@
-go env -w GOPROXY="https://goproxy.cn,direct"
+#go env -w GOPROXY="https://goproxy.cn,direct"
 
 set -g theme_color_scheme gruvbox
 set -g theme_date_format "+%Y-%m-%d %a %H:%M:%S"
