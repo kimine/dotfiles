@@ -8,4 +8,9 @@ set PATH $HOME/bin $HOME/.cargo/bin $PATH $HOME/.emacs.d/bin
 
 set -g theme_vcs_ignore_paths /c /d
 
+if type -q rustc
+    set rustroot (rustc --print sysroot)
+    set -gx RUST_SRC_PATH "$rustroot"/lib/rustlib/src/rust/src/
+end
+
 alias ip="ip -c"
