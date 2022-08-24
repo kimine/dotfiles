@@ -6,7 +6,7 @@ syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
 
-Plug 'ycm-core/YouCompleteMe', {'do': './install.py --clangd-completer --go-completer --rust-completer --cs-completer'}
+Plug 'ycm-core/YouCompleteMe', {'do': './install.py --clangd-completer --go-completer --cs-completer'}
 
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
