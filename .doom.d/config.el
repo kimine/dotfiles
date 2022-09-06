@@ -80,3 +80,6 @@
   (define-key evil-motion-state-map (kbd "C-i") 'better-jumper-jump-forward))
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(global-unset-key (kbd "M-k"))
+(global-unset-key (kbd "C-k"))
