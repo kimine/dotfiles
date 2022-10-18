@@ -83,3 +83,4 @@
 
 (global-unset-key (kbd "M-k"))
 (global-unset-key (kbd "C-k"))
+(add-hook 'go-mode-hook 'lsp-deferred)
