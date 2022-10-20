@@ -83,4 +83,12 @@
 
 (global-unset-key (kbd "M-k"))
 (global-unset-key (kbd "C-k"))
+
 (add-hook 'go-mode-hook 'lsp-deferred)
+(add-hook 'go-mode-hook (lambda()
+                          (make-local-variable 'compile-command)
+                          (setq compile-command "go build -v")
+                          )
+ )
+
+(setq lsp-rust-server 'rust-analyzer)
