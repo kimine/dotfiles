@@ -14,3 +14,4 @@ if type -q rustc
 end
 
 alias ip="ip -c"
+alias em="emacs"

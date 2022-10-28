@@ -50,3 +50,5 @@
 ;(unpin! t)
 (package! better-jumper)
 (package! rainbow-delimiters)
+(package! orderless)
+(package! all-the-icons)

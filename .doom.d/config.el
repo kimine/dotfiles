@@ -21,8 +21,8 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
-;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
+(setq doom-font (font-spec :family "xos4 Terminus" :size 14)
+        doom-variable-pitch-font (font-spec :family "xos4 Terminus" :size 14))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -79,7 +79,11 @@
   (define-key evil-motion-state-map (kbd "C-o") 'better-jumper-jump-backward)
   (define-key evil-motion-state-map (kbd "C-i") 'better-jumper-jump-forward))
 
+
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 
 (global-unset-key (kbd "M-k"))
 (global-unset-key (kbd "C-k"))
@@ -89,6 +93,9 @@
                           (make-local-variable 'compile-command)
                           (setq compile-command "go build -v")
                           )
- )
+          )
+
 
 (setq lsp-rust-server 'rust-analyzer)
+
+(setq doom-modeline-workspace-name t)
