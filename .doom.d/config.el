@@ -82,6 +82,7 @@
   (define-key evil-motion-state-map (kbd "C-i") 'better-jumper-jump-forward))
 
 
+
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -96,6 +97,13 @@
                           (setq compile-command "go build -v")
                           )
           )
+
+(map!
+ (:map evil-window-map
+ "H" #'evil-window-decrease-width
+ "J" #'evil-window-decrease-height
+ "K" #'evil-window-increase-height
+ "L" #'evil-window-increase-width))
 
 
 (setq lsp-rust-server 'rust-analyzer)
