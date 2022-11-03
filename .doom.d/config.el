@@ -21,9 +21,9 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "xos4 Terminus" :size 14)
-        doom-variable-pitch-font (font-spec :family "xos4 Terminus" :size 14)
-        doom-big-font (font-spec :family "xos4 Terminus")
+(setq doom-font (font-spec :family "xos4 Terminus" :size 16)
+        doom-variable-pitch-font (font-spec :family "xos4 Terminus" :size 16)
+        doom-big-font (font-spec :family "xos4 Terminus" :size 16)
         )
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -85,6 +85,8 @@
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(undecorated . t))
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 
