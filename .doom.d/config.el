@@ -111,3 +111,5 @@
 (setq lsp-rust-server 'rust-analyzer)
 
 (setq doom-modeline-workspace-name t)
+
+(setq company-minimum-prefix-length 1)
