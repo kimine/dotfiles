@@ -1,3 +1,7 @@
-function tms -d "Switch tmux session"
-    tmux list-sessions -F "#{session_name}" | fzf | read -l result; and tmux switch-client -t "$result"
+function tms -d "tmux session"
+    if test -n "$TMUX"
+        tmux ls -F "#{session_name}" | fzf | read -l result; and tmux switchc -t "$result"
+        return
+    end
+    tmux ls -F "#{session_name}" | fzf | read -l result; and tmux at -t "$result"
 end
