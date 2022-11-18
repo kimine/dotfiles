@@ -1,88 +1,14 @@
+{
+    allowUnfree = true;
+    packageOverrides = pkgs: with pkgs; rec {
+        myVim = vim_configurable.customize {
+              name = "vim";
+              vimrcConfig = {
+                  plug.plugins = with pkgs.vimPlugins; [vim-addon-nix vim-go YouCompleteMe gruvbox fzf-vim ];
+                  customRC = ''
 syntax on
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" install vim-plug
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin()
- 
-Plug 'ycm-core/YouCompleteMe', {'do': './install.py --go-completer'}
-
-Plug 'scrooloose/syntastic'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'junegunn/fzf',  { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'Yggdroot/indentLine'
-Plug 'kshenoy/vim-signature'
-Plug 'mileszs/ack.vim'
-Plug 'luochen1990/rainbow'
-Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
-Plug 'rust-lang/rust.vim'
-Plug 'easymotion/vim-easymotion'
-
-"for buffer
-Plug 'moll/vim-bbye'
-"Plug 'fholgado/minibufexpl.vim'
-"for edit
-Plug 'dyng/ctrlsf.vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'sjl/gundo.vim'
-Plug 'gcmt/wildfire.vim'
-
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'roxma/vim-tmux-clipboard'
-
-"for cpp
-"Plug 'Mizuchi/STL-Syntax'
-
-"Plug 'xolox/vim-lua-ftplugin'
-Plug 'tbastos/vim-lua'
-
-"for python
-"Plugin 'davidhalter/jedi'
-"Plugin 'davidhalter/jedi-vim'
-"Plug 'klen/python-mode'
-
-"for golang
-Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'} 
-
-"for js
-Plug 'elzr/vim-json'
-Plug 'pangloss/vim-javascript'
-Plug 'ternjs/tern_for_vim'
-
-"for haskell
-"Plug 'Shougo/vimproc.vim'
-"Plug 'Shougo/neocomplete.vim'
-"Plug 'eagletmt/ghcmod-vim'
-"Plug 'eagletmt/neco-ghc'
-"Plug 'neovimhaskell/haskell-vim'
-
-" markdown
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-
-"for display
-Plug 'bling/vim-bufferline'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
-
-"theme
-Plug 'altercation/vim-colors-solarized'
-Plug 'tomasr/molokai'
-Plug 'morhetz/gruvbox'
-Plug 'dracula/vim'
-Plug 'chriskempson/vim-tomorrow-theme'
-
-" shell
-Plug 'dag/vim-fish'
-
-call plug#end()
-
 set rtp+=~/.fzf
+set encoding=utf-8
 set t_Co=256
 set ai
 set si
@@ -404,4 +330,16 @@ inoremap <C-s>     <C-O>:update<cr>
 nnoremap <C-s>     :update<cr>
 nnoremap <leader>s :update<cr>
 nnoremap <leader>w :update<cr>
+                  '';
+              };
+        };
+        myPackages = pkgs.buildEnv {
+            name = "my-packages";
+            paths = [
+                jq
+                myVim
+            ];
+        };
+    };
+}
 
