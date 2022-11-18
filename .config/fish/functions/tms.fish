@@ -1,15 +1,3 @@
-function tms
-    if test -n "$TMUX"
-        tmux choose-tree -s
-        return
-    end
-    set -l sessnum (tmux ls | wc -l)
-    if test $sessnum -eq 0
-        tmux
-        return
-    end
-    set -l sessname (tmux ls | fzf | gawk  -F: '{print$1}')
-    if test -n "$sessname"
-        tmux at -t $sessname
-    end
+function tms -d "Switch tmux session"
+    tmux list-sessions -F "#{session_name}" | fzf | read -l result; and tmux switch-client -t "$result"
 end
