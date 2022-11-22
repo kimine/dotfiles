@@ -5,8 +5,6 @@ syntax on
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
- 
-Plug 'ycm-core/YouCompleteMe', {'do': './install.py --go-completer'}
 
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'

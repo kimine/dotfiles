@@ -1,5 +1,2 @@
-
-set -gx GOPATH $HOME/.go
-set -gx GOBIN $HOME/.go/bin
-
+go_env
 fish_add_path $GOBIN
