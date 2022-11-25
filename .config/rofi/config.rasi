@@ -1,0 +1,6 @@
+configuration {
+    modi: "window,run,ssh,drun";
+    show-icons: true;
+    combi-modi: "window,drun,ssh";
+}
+@theme "gruvbox-dark-soft"

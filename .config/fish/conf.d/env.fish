@@ -13,5 +13,10 @@ if type -q rustc
     set -gx RUST_SRC_PATH "$rustroot"/lib/rustlib/src/rust/src/
 end
 
+set -gx TERM alacritty
+set -gx QT_IM_MODULE fcitx
+set -gx GTX_IM_MODULE fcitx
+set -gx XMODIFIERS @im=fcitx
+
 alias ip="ip -c"
 alias em="emacs"
