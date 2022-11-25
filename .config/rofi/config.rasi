@@ -1,7 +1,7 @@
 configuration {
-    modi: "window,run,ssh,drun";
+    modi: "drun,ssh,combi";
     show-icons: true;
-    combi-modi: "window,drun,ssh";
+    combi-modi: "drun,ssh";
     ssh-command: "alacritty -e ssh {host}";
     kb-remove-to-eol: "";
     kb-accept-entry: "";
