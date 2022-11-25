@@ -2,5 +2,11 @@ configuration {
     modi: "window,run,ssh,drun";
     show-icons: true;
     combi-modi: "window,drun,ssh";
+    ssh-command: "alacritty -e ssh {host}";
+    kb-remove-to-eol: "";
+    kb-accept-entry: "";
+    kb-accept-entry: "Return,KP_Enter";
+    kb-row-down: "Control+j";
+    kb-row-up: "Control+k";
 }
 @theme "gruvbox-dark-soft"
