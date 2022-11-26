@@ -2,6 +2,7 @@ configuration {
     modi: "drun,ssh,run,combi";
     show-icons: true;
     combi-modi: "drun,ssh,run";
+    terminal: "alacritty";
     ssh-command: "alacritty -e ssh {host}";
     kb-remove-to-eol: "";
     kb-accept-entry: "";
@@ -9,6 +10,7 @@ configuration {
     kb-row-down: "Control+j";
     kb-row-up: "Control+k";
     run-command: "fish -c {cmd}";
+    run-shell-command: "{terminal} -e {cmd}";
     run-list-command: "fish -c functions";
 }
 @theme "gruvbox-dark-hard"
