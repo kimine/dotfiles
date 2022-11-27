@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
-#
+
 # wm independent hotkeys
-#
 
 # terminal emulator
 super + shift + Return
