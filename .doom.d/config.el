@@ -107,6 +107,8 @@
  "K" #'evil-window-increase-height
  "L" #'evil-window-increase-width))
 
+(setq select-enable-primary 't)
+(setq select-enable-clipboard 't)
 
 (setq lsp-rust-server 'rust-analyzer)
 
