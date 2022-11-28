@@ -18,8 +18,6 @@ end
 set -gx TERM xterm-256color
 set -gx TERMINAL alacritty
 set -gx XMODIFIERS @im=fcitx
-set -gx GTK_IM_MODULE fcitx
-set -gx QT_IM_MODULE fcitx
 
 alias ip="ip -c"
 alias em="emacs"
