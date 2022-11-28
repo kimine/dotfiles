@@ -9,6 +9,7 @@ configuration {
     kb-accept-entry: "Return,KP_Enter";
     kb-row-down: "Control+j";
     kb-row-up: "Control+k";
+    monitor: -1;
     run-shell-command: "{terminal} -e {cmd}";
 }
 @theme "gruvbox-dark-hard"

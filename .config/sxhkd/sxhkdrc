@@ -14,6 +14,9 @@ super + p
 super + Escape
 	pkill -USR1 -x sxhkd
 
+super + e
+    fish -c ebook
+
 #
 # bspwm hotkeys
 #
@@ -58,9 +61,12 @@ super + ctrl + {m,x,y,z}
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus the monitory
-super + {comma,period}
-	bspc node -f @{first,second}
+alt + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the monitor
+super + {_, shift + } {comma,period}
+	bspc {monitor -f, node -m} {west,east}
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
