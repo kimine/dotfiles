@@ -3,12 +3,11 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom -b
 
-if [[ $HOSTNAME == hsuse ]] then
-    bspc monitor rdp0 -d 1 2 3 4
-    bspc monitor rdp1 -d 5 6 7 8
+if [ "$(xrandr | grep -sw 'connected' | wc -l)" = "2" ]; then
+  bspc monitor $(bspc query -M | sed -n 1p) -d I II III IV V
+  bspc monitor $(bspc query -M | sed -n 2p) -d VI VII VIII IX X
 else
-    bspc monitor DisplayPort-0 -d 1 2 3 4
-    bspc monitor HDMI-A-0 -d 5 6 7 8
+  bspc monitor -d I II III IV V VI VII VIII IX X
 fi
 
 
