@@ -22,8 +22,11 @@
 ;; accept. For example:
 ;;
 (setq doom-font (font-spec :family "xos4 Terminus" :size 14)
-        doom-variable-pitch-font (font-spec :family "xos4 Terminus" :size 14)
-        doom-big-font (font-spec :family "xos4 Terminus" :size 14)
+        doom-serif-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song")
+        ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
+        ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
+        ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
+        ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 14 )
         )
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
