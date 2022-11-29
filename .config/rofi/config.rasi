@@ -12,4 +12,4 @@ configuration {
     monitor: -1;
     run-shell-command: "{terminal} -e {cmd}";
 }
-@theme "gruvbox-dark-hard"
+@theme "gruvbox-dark-soft"
