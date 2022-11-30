@@ -2,5 +2,5 @@
 
 export SXHKD_SHELL='/usr/bin/sh'
 xsetroot -cursor_name left_ptr
-feh --bg-scale ~/.config/feh/bg/8207827.png  ~/.config/feh/bgv/linux_tux_ver.png
+feh --bg-scale ~/.config/feh/bg/gruvbox-14.jpg  ~/.config/feh/bgv/linux_tux_ver.png
 exec bspwm
