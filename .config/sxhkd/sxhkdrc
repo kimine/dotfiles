@@ -3,11 +3,11 @@
 # wm independent hotkeys
 
 # terminal emulator
-super + shift + Return
+mod4 + shift + Return
 	alacritty
 
 # program launcher
-super + p
+mod4 + p
 	rofi -show combi
 
 # make sxhkd reload its configuration files:
@@ -38,8 +38,8 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
+super + {_,shift + } g
+	bspc node -s {biggest.window.local, biggest.window}
 
 #
 # state/flags
