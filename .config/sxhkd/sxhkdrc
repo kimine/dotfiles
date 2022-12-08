@@ -17,6 +17,9 @@ mod4 + Escape
 mod4 + b
     fish -c ebook
 
+mod4 + v
+    fish -c clip
+
 #
 # bspwm hotkeys
 #

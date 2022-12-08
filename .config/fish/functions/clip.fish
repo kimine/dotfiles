@@ -1,0 +1,4 @@
+function clip
+    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+end
+
