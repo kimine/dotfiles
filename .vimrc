@@ -110,6 +110,7 @@ set ruler
 set laststatus=2
 set splitbelow
 set termwinsize=10x0
+set clipboard=unnamed
 
 set background=dark
 "colorscheme molokai
@@ -402,4 +403,5 @@ inoremap <C-s>     <C-O>:update<cr>
 nnoremap <C-s>     :update<cr>
 nnoremap <leader>s :update<cr>
 nnoremap <leader>w :update<cr>
+
 

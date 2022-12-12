@@ -26,13 +26,13 @@
         ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
-        ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 14 )
+        doom-unicode-font (font-spec :family "xos4 Terminus":size 14 )
         )
-(defun init-cjk-fonts()
-  (dolist (charset '(kana han cjk-misc bopomofo))
-    (set-fontset-font (frame-parameter nil 'font)
-      charset (font-spec :family "WenQuanYi WenQuanYi Bitmap Song" :size 14))))
-        (add-hook 'doom-init-ui-hook 'init-cjk-fonts)
+;; (defun init-cjk-fonts()
+;;   (dolist (charset '(kana han cjk-misc bopomofo))
+;;     (set-fontset-font (frame-parameter nil 'font)
+;;       charset (font-spec :family "WenQuanYi WenQuanYi Bitmap Song" :size 14))))
+;;         (add-hook 'doom-init-ui-hook 'init-cjk-fonts)
 
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
