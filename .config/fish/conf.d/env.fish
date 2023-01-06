@@ -2,7 +2,10 @@ set -g theme_color_scheme gruvbox
 set -g theme_date_format "+%Y-%m-%d %a %H:%M:%S"
 # set -g theme_powerline_fonts no
 
-set -gx EDITOR "nvim"
+#set -gx EDITOR "nvim"
+set -gx EDITOR "emacs-nox" 
+set -gx PAGER "bat" 
+set -gx MANPAGER "bat" 
 
 set -gx SXHKD_SHELL '/usr/bin/sh'
 
@@ -20,4 +23,4 @@ set -gx TERMINAL alacritty
 set -gx XMODIFIERS @im=fcitx
 
 alias ip="ip -c"
-alias em="emacs"
+alias em="emacs-nox"

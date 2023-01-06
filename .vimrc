@@ -80,7 +80,6 @@ Plug 'dag/vim-fish'
 
 call plug#end()
 
-set rtp+=~/.fzf
 set t_Co=256
 set ai
 set si
@@ -110,7 +109,7 @@ set ruler
 set laststatus=2
 set splitbelow
 set termwinsize=10x0
-set clipboard=unnamed
+set clipboard=unnamed,unnamedplus
 
 set background=dark
 "colorscheme molokai
@@ -142,7 +141,7 @@ nmap <silent> <leader>ll :bufdo e<cr>
 
 
 if executable('jq')
-    map <silent> <leader>j :%!jqf .<cr>
+    map <silent> <leader>j :%!jq .<cr>
 endif
 
 
