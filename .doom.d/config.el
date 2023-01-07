@@ -21,13 +21,15 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "xos4 Terminus" :size 14)
+(setq doom-font (font-spec :family "xos4 Terminus" :size 18)
         ;;doom-serif-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song")
         ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
-        doom-unicode-font (font-spec :family "xos4 Terminus":size 14 )
+        ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 14 )
+        doom-unicode-font (font-spec :family "xos4 Terminus":size 18 )
         )
+
 ;; (defun init-cjk-fonts()
 ;;   (dolist (charset '(kana han cjk-misc bopomofo))
 ;;     (set-fontset-font (frame-parameter nil 'font)

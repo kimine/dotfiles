@@ -2,8 +2,7 @@ set -g theme_color_scheme gruvbox
 set -g theme_date_format "+%Y-%m-%d %a %H:%M:%S"
 # set -g theme_powerline_fonts no
 
-#set -gx EDITOR "nvim"
-set -gx EDITOR "emacs-nox" 
+set -gx EDITOR "emacs-nox"
 set -gx PAGER "bat" 
 set -gx MANPAGER "bat" 
 
