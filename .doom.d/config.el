@@ -6,7 +6,7 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "zhengqf"
+(setq user-full-name "kimine"
       user-mail-address "zhengqf@taojinhudong.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
@@ -27,7 +27,7 @@
         ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 14 )
-        doom-unicode-font (font-spec :family "xos4 Terminus":size 18 )
+        doom-unicode-font (font-spec :family "LXGW WenKai Mono":size 18 )
         )
 
 ;; (defun init-cjk-fonts()
