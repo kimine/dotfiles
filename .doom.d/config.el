@@ -91,8 +91,7 @@
 (with-eval-after-load 'evil-maps
   (define-key evil-motion-state-map (kbd "C-o") 'better-jumper-jump-backward)
   (define-key evil-motion-state-map (kbd "C-i") 'better-jumper-jump-forward))
-
-
+(add-hook 'better-jumper-post-jump-hook 'recenter)
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
