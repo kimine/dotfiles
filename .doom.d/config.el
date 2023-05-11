@@ -26,7 +26,7 @@
         ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
-        ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 14 )
+        ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 18)
         doom-unicode-font (font-spec :family "LXGW WenKai Mono":size 18 )
         )
 
