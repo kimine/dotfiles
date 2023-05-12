@@ -3,7 +3,6 @@ set -g theme_date_format "+%Y-%m-%d %a %H:%M:%S"
 
 set -gx EDITOR emacs-nox
 set -gx PAGER bat
-set -gx MANPAGER "bat -l man -p"
 
 set -gx FZF_COMPLETE 1
 set -gx SXHKD_SHELL /usr/bin/sh
