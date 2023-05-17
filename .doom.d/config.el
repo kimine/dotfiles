@@ -27,7 +27,7 @@
         ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
         ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 18)
-        doom-unicode-font (font-spec :family "LXGW WenKai Mono":size 18 )
+        doom-unicode-font (font-spec :family "monospace":size 18 )
         )
 
 ;; (defun init-cjk-fonts()
