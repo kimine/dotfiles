@@ -1,7 +1,7 @@
 set -gx FZF_COMPLETE 1
 set -gx FZF_ENABLE_OPEN_PREVIEW 1
 set -gx FZF_DEFAULT_COMMAND 'fd --type f --strip-cwd-prefix'
-set -gx FZF_ALT_C_COMMAND 'fd --type d -H --strip-cwd-prefix'
+set -gx FZF_ALT_C_COMMAND 'fd --type d --strip-cwd-prefix'
 set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -gx FZF_CTRL_T_OPTS "--preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 set -gx FZF_ALT_C_OPTS "--preview 'lsd --tree {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
