@@ -8,7 +8,7 @@ mod4 + shift + Return
 
 # program launcher
 mod4 + p
-	rofi -show combi
+	rofi -show combi -matching fuzzy
 
 mod4 + shift + p
     rofi -show power-menu -modi power-menu:rofi-power-menu

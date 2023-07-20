@@ -1,6 +1,7 @@
 configuration {
     modi: "drun,ssh,run,window,combi";
     show-icons: true;
+    drun-match-fields: "name";
     combi-modi: "drun,ssh,run,window";
     terminal: "alacritty";
     ssh-command: "alacritty -e ssh {host}";
