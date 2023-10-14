@@ -4,6 +4,7 @@ configuration {
     drun-match-fields: "name";
     combi-modi: "drun,ssh,run,window";
     terminal: "alacritty";
+    font: "Inconsolata Nerd Font Mono 14";
     ssh-command: "alacritty -e ssh {host}";
     kb-remove-to-eol: "";
     kb-accept-entry: "";

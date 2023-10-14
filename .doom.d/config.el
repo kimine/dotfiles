@@ -7,7 +7,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
 (setq user-full-name "kimine"
-      user-mail-address "zhengqf@taojinhudong.com")
+      user-mail-address "279077873@qq.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -22,13 +22,13 @@
 ;; accept. For example:
 ;;
 (setq doom-font (font-spec :family "xos4 Terminus" :size 18)
-        ;;doom-serif-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song")
-        ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
-        ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
-        ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
-        ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 18)
-        doom-unicode-font (font-spec :family "monospace":size 18 )
-        )
+      ;;doom-serif-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song")
+      ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
+      ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)
+      ;;doom-serif-font(font-spec :family "xos4 Terminus" :size 14)
+      ;;doom-unicode-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song":size 18)
+      ;;doom-emoji-font (font-spec :family "monospace":size 18 )
+      )
 
 ;; (defun init-cjk-fonts()
 ;;   (dolist (charset '(kana han cjk-misc bopomofo))
@@ -112,10 +112,10 @@
 
 (map!
  (:map evil-window-map
- "H" #'evil-window-decrease-width
- "J" #'evil-window-decrease-height
- "K" #'evil-window-increase-height
- "L" #'evil-window-increase-width))
+       "H" #'evil-window-decrease-width
+       "J" #'evil-window-decrease-height
+       "K" #'evil-window-increase-height
+       "L" #'evil-window-increase-width))
 
 (setq select-enable-primary 't)
 (setq select-enable-clipboard 't)
