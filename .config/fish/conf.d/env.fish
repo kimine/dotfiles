@@ -21,3 +21,5 @@ set -gx XMODIFIERS @im=fcitx
 
 alias ip="ip -c"
 alias em="emacs -nw "
+
+alias hx="helix"
