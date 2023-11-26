@@ -6,7 +6,9 @@ set -gx PAGER bat
 
 set -gx FZF_COMPLETE 1
 set -gx SXHKD_SHELL /usr/bin/sh
-fish_add_path $HOME/bin $HOME/.cargo/bin $HOME/.config/emacs/bin $HOME/.local/bin
+fish_add_path $HOME/bin $HOME/.local/bin
+fish_add_path $HOME/.cargo/bin $HOME/.config/emacs/bin 
+fish_add_path $HOME/.deno/bin
 
 set -g theme_vcs_ignore_paths /c /d
 
