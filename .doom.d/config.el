@@ -6,8 +6,6 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "kimine"
-      user-mail-address "279077873@qq.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -21,7 +19,9 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "xos4 Terminus" :size 18)
+;;(setq doom-font (font-spec :family "xos4 Terminus" :size 18)
+(setq doom-font (font-spec :family "Terminus (TTF)" :size 18)
+      ;;(setq doom-font (font-spec :family "MonaspiceRn Nerd Font Mono" :size 18)
       ;;doom-serif-font (font-spec :family "WenQuanYi WenQuanYi Bitmap Song")
       ;;doom-variable-pitch-font(font-spec :family "xos4 Terminus" :size 14)
       ;;doom-big-font(font-spec :family "xos4 Terminus" :size 14)

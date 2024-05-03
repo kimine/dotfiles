@@ -2,8 +2,8 @@
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 pgrep -x picom >/dev/null || picom -b
-pgrep -x fcitx >/dev/null || fcitx
 pgrep -x greenclip >/dev/null || greenclip daemon &
+fcitx5 -d -r
 disown
 
 if [ "$(xrandr | grep -sw 'connected' | wc -l)" = "2" ]; then

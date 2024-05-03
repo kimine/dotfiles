@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+
 export DRI_PRIME=1
 export SXHKD_SHELL='/usr/bin/sh'
 xsetroot -cursor_name left_ptr
